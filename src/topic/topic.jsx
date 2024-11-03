@@ -1,11 +1,14 @@
 import React from "react";
 import ChangeText from "./ChangeText";
 
+
 class Topic extends React.Component{
     render() {
-        console.log('render')
         return <header>
-            <ChangeText />
+            <figure id={'topOval'}></figure>
+            <figure id={'emptyOval'}></figure>
+            <figure id={'photoOval'}></figure>
+            <ChangeText/>
         </header>
     }
 }

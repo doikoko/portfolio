@@ -32,7 +32,6 @@ class ChangeText extends React.Component{
 
             this.countFirstRow++
             this.countLastRow++
-            console.log(this.count)
             this.endEdit()
         }, 100)
     }
@@ -40,10 +39,10 @@ class ChangeText extends React.Component{
         if(this.countLastRow >= this.lrLength) clearInterval(this.interval)
     }
     render() {
-        return(<>
+        return(<div>
             <h2>{this.state.name}</h2>
             <h3>{this.state.develop}</h3>
-            </>
+            </div>
         )
     }
 }
