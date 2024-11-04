@@ -8,7 +8,7 @@ class ChangeText extends React.Component{
             develop: "",
         }
         this.usages = {
-            firstRow: "Daniil Sasunov",
+            firstRow: "Sasunov Daniil",
             lastRow: "Front-End Developer"
         }
         this.interval = null

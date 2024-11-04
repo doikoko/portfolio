@@ -39,7 +39,17 @@ body{
 #emptyOval{
     background-image: none;
     background-color: #fff;
-    top: -13vh;
+    animation-name: moveOval;
+    animation-duration: 1s;
+    top: -13vh
+}
+@keyframes moveOval{
+    from{
+        top: -15vh;
+    }
+    to{
+        top: -13vh;
+    }
 }
 
 header div{
@@ -47,34 +57,76 @@ header div{
     margin-top: 400px;
     text-align: center;
     line-height: 120px;
-    height: 500px;
+    height: 30vh;
+    margin-bottom: 0;
 }
 header div h2{
     color: #4a4a4a;
     font-size: 90px;
 }
 header div h3{
-    color: #6c6c6c;
     font-size: 50px;
+    color: #caac08;
 }
 @media (max-width: 800px) {
+    header div{
+        height: 25vh;
+    }
     header div h2{
-        color: #4a4a4a;
         font-size: 70px;
+        line-height: 100px;
     }
     header div h3{
-        color: #6c6c6c;
         font-size: 40px;
     }
 }
 @media (max-width: 600px) {
+    header div{
+        overflow: hidden;
+        height: 20vh;
+    }
     header div h2{
-        color: #4a4a4a;
         font-size: 50px;
-        line-height: 70px;
+        line-height: 60px;
+        overflow: hidden;
     }
     header div h3{
-        color: #6c6c6c;
         font-size: 30px;
+    }
+}
+
+header hr{
+    position: relative;
+    width: 25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-duration: 3s;
+    animation-name: lineExpansion;
+}
+@keyframes lineExpansion {
+    from{
+        width: 5vw;
+    }
+    to{
+        width: 25vw;
+    }
+}
+
+header ul{
+    font-size: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+    animation-name: gap;
+    animation-duration: 2s;
+}
+@keyframes gap {
+    from{
+        gap: 3vw;
+    }
+    to{
+        gap: 7vw;
     }
 }
