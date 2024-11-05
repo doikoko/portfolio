@@ -10,7 +10,7 @@ function Modal(props){
                     <div id="modalBody">
                         <div id="modalFooter">
                             <button id={"follow"} value={"follow"}></button>
-                            <button className={`close close${number}`} c value={"close"}></button>
+                            <button className={`close close${number}`} value={"close"}></button>
                         </div>
                     </div>
                 </div>

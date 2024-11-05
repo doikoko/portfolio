@@ -1,5 +1,5 @@
 import React from "react";
-import ChangeText from "./changeText";
+import ChangeText from "./ChangeText";
 import Modal from "./modal";
 import gmailIcon from "../img/gmail.png"
 import telegramIcon from "../img/telegram.png"
