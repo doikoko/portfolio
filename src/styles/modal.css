@@ -1,0 +1,6 @@
+#main{
+    width: 500px;
+    height: 500px;
+    border-radius: 20%;
+    border: 3px solid rgba(0, 0, 43, 0.96);
+}
