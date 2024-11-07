@@ -12,13 +12,9 @@ class Topic extends React.Component{
             modalIsActive: false,
             modalNumber: 0
         }
-        this.links = {
-            telegram: "https://t.me/DaniilSasunov",
-            gmail: "danilsasunov.2089@gmail.com",
-            mobilePhone: "+7(959)156-07-97",
-        }
     }
     render() {
+        const setModalIsActive = (value) => this.setState({modalIsActive: value});
         return <header>
             <figure id={'topOval'}></figure>
             <figure id={'emptyOval'}></figure>
@@ -30,7 +26,7 @@ class Topic extends React.Component{
                 <img src={gmailIcon} alt={"gmail"} onClick={() => this.setState({modalIsActive: true, modalNumber: 2})}></img>
                 <img src={phoneIcon} alt={"phone"} onClick={() => this.setState({modalIsActive: true, modalNumber: 3})}></img>
             </div>
-            <Modal isActive={this.state.modalIsActive} number={this.state.modalNumber}/>
+            <Modal isActive={this.state.modalIsActive} setIsActive={setModalIsActive} number={this.state.modalNumber}/>
         </header>
     }
 }

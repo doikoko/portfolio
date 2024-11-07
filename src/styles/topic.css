@@ -8,8 +8,9 @@
     font-weight: 500;
     font-style: normal;
 }
-body{
+body {
     background: linear-gradient(to right, #f4f3f3, #e4e2db);
+    overflow-x: hidden;
 }
 #topOval{
     position: absolute;
@@ -88,7 +89,7 @@ header hr{
 
 #contacts{
     width: 100vw;
-    height: 150px;
+    height: 100px;
     font-size: 40px;
     margin-top: 50px;
     display: flex;
@@ -99,8 +100,9 @@ header hr{
 }
 #contacts img{
     cursor: pointer;
+    width: 100px;
+    height: 100px;
 }
-
 @keyframes gap {
     from{
         gap: 3vw;
@@ -111,7 +113,7 @@ header hr{
 }
 
 @media (max-width: 800px) {
-    header div{
+    #contacts{
         height: 25vh;
     }
     header div h2{
@@ -122,15 +124,15 @@ header hr{
         font-size: 40px;
     }
     #contacts{
-        margin-top: 100px;
+        margin-top: 50px;
     }
     #contacts img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 }
 @media (max-width: 600px) {
-    header div{
+    #contacts{
         overflow: hidden;
         height: 20vh;
     }
@@ -143,7 +145,7 @@ header hr{
         font-size: 30px;
     }
     #contacts{
-        margin-top: 120px;
+        margin-top: 50px;
     }
     #contacts img{
         width: 70px;
