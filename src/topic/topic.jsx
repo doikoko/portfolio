@@ -15,7 +15,7 @@ class Topic extends React.Component{
     }
     render() {
         const setModalIsActive = (value) => this.setState({modalIsActive: value});
-        return <header>
+        return <header id={'topic'}>
             <figure id={'topOval'}></figure>
             <figure id={'emptyOval'}></figure>
             <figure id={'photoOval'}></figure>

@@ -128,3 +128,43 @@
         height: 80px;
     }
 }
+@media(max-width: 600px){
+    .modalDisplay{
+        width: 100vw;
+        height: 700px;
+        top: 100%;
+        border-radius: 40px;
+        animation-name: modalPhone;
+        animation-duration: 1s;
+    }
+    #modal img{
+        top: calc(100% - 400px);
+        animation-name: modalPhoneImg;
+        animation-duration: 1s;
+    }
+    .follow{
+        margin-right: 200px;
+    }
+    .close{
+        margin-left: 200px;
+    }
+    .close3{
+         margin-right: 200px;
+    }
+    @keyframes modalPhoneImg{
+        from{
+            top: 100%;
+        }
+        to{
+            top: calc(100% - 400px);
+        }
+    }
+    @keyframes modalPhone {
+        from {
+            top: calc(100% + 700px);
+        }
+        to {
+            top: 100%;
+        }
+    }
+}
