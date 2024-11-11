@@ -14,10 +14,10 @@ class About extends React.Component {
     render() {
         return(
             <aside id={"about"}>
-                <h1 id={"aboutTitle"}>About</h1>
+                <h1 className={"textTitle"}>About</h1>
                 <div id={"aboutMain"}>
                     <div id={"aboutTextContainer"}>
-                        <p id={"aboutText"}>Hello, i'm junior front-end developer <br/>
+                        <p className={"mainText"}>Hello, i'm junior front-end developer <br/>
                             with a passion for making web apps. <br/>
                             In this site i will public my future projects. <br/>
                             I wish i will interest you</p>
