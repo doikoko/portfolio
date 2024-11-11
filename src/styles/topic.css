@@ -52,9 +52,6 @@ body {
     from{
         top: -15vh;
     }
-    to{
-        top: -13vh;
-    }
 }
 
 header div{
@@ -86,9 +83,6 @@ header hr{
     from{
         width: 5vw;
     }
-    to{
-        width: 25vw;
-    }
 }
 
 #contacts{
@@ -110,9 +104,6 @@ header hr{
 @keyframes gap {
     from{
         gap: 3vw;
-    }
-    to{
-        gap: 7vw;
     }
 }
 

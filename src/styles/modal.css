@@ -5,6 +5,7 @@
     position: fixed;
     margin: 0;
     top: 0;
+    z-index: 1;
 }
 .modalDisplay{
     width: 600px;
@@ -60,6 +61,7 @@
     align-items: center;
 }
 .follow{
+    margin-bottom: 3vh;
     margin-right: 250px;
     display: block;
     position: fixed;
@@ -93,6 +95,7 @@
     background-color: #332b00;
 }
 .close{
+    margin-bottom: 3vh;
     margin-left: 250px;
     display: block;
     position: fixed;
@@ -155,16 +158,10 @@
         from{
             top: 100%;
         }
-        to{
-            top: calc(100% - 400px);
-        }
     }
     @keyframes modalPhone {
         from {
             top: calc(100% + 700px);
-        }
-        to {
-            top: 100%;
         }
     }
 }

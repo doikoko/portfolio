@@ -1,88 +1,94 @@
 #about {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 #about > *{
-    margin-left: 15vw;
+    margin-left: 20vw;
 }
 #aboutTitle{
     margin-top: 50px;
     font-size: 70px;
 }
-#aboutMain{
-    display: flex;
-    gap: 100px;
-}
 #aboutTextContainer{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-radius: 90px;
-    border: 5px solid #bcbcbc;
-    width: 600px;
-    height: 300px;
-    animation-name: aboutContainer;
-    animation-duration: 1s;
-    font-size: 25px;
-    color: #fff;
-}
-@keyframes aboutContainer{
-    from{
-        border-radius: 40px;
-        border: 1px solid #bcbcbc;
-        width: 300px;
-        height: 150px;
-        font-size: 10px;
-    }
-    to{
-        width: 600px;
-        height: 300px;
-        border-radius: 90px;
-        font-size: 25px;
-        border: 5px solid #bcbcbc;
-    }
-}
-#about ul{
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 20%;
-    border: 5px solid #000;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 30px;
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
 }
-#aboutCircle{
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    background-color: #000;
-    border: 15px solid #979797;
-    margin-left: calc(100vw - 400px);
-}
-#skills{
-    background-color: #fff;
-    border-radius: 50%;
-    border: 5px solid #979797;
-    font-size: 90px;
-    padding: 50px;
-    display: inline;
+aside > figure{
+    display: block;
+    width: 500px;
+    height: 500px;
     position: absolute;
-    top: 155vh;
-    left: 20vw;
-    animation-name: skills;
-    animation-duration: 1s;
+    border-radius: 50%;
 }
-@keyframes skills{
+#aboutCircleBlack{
+    background-color: rgba(0, 0, 43, 0.96);;
+    top: calc(100vh + 500px);
+    left: calc(100vw - 300px);
+    margin: 0;
+}
+#aboutCircleWhite{
+    background-color: #ffffff;
+    top: calc(100vh + 450px);
+    left: calc(100vw - 350px);
+    margin: 0;
+    border: 4px rgba(0, 0, 43, 0.96) solid;
+    /*animation-name add with js*/
+    animation-duration: 2s;
+}
+@keyframes whiteCircle {
     from{
-        left: 10vw;
-        top: 160vh;
+        top: calc(100vh + 500px);
+        left: calc(100vw - 300px);
     }
-    to{
-        left: 20vw;
-        top: 155vh;
+}
+@media (max-width: 1250px) {
+    aside > figure {
+        width: 300px;
+        height: 300px;
+    }
+    #aboutCircleBlack {
+        left: calc(100vw - 150px);
+    }
+    #aboutCircleWhite{
+        left: calc(100vw - 200px);
+    }
+    @keyframes whiteCircle {
+        from{
+            top: calc(100vh + 500px);
+            left: calc(100vw - 150px);
+        }
+    }
+}
+@media (max-width: 1050px) {
+    aside > figure{
+        visibility: hidden;
+    }
+}
+@media (max-width: 800px) {
+    #about > *{
+        margin-left: 10vw;
+    }
+    #aboutTitle{
+        font-size: 50px;
+    }
+    #aboutTextContainer{
+        font-size: 25px;
+    }
+}
+@media (max-width: 550px) {
+    #aboutTitle{
+        font-size: 40px;
+    }
+    #aboutTextContainer{
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px) {
+    #aboutTitle{
+        font-size: 30px;
+    }
+    #aboutTextContainer{
+        font-size: 15px;
     }
 }
