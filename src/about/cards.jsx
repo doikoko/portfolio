@@ -3,6 +3,7 @@ import {useEffect, useRef} from "react";
 
 import html from "../img/skillsIcons/html.png"
 import css from "../img/skillsIcons/css.png"
+import ts from "../img/skillsIcons/typescript.png"
 import js from "../img/skillsIcons/js.png"
 import react from "../img/skillsIcons/react.png"
 
@@ -30,18 +31,24 @@ function Cards(){
             </div>
             <div id="card3">
                 <div className={"card3Header cardHeader"}>
+                    <img src={ts} alt={"ts"}/>
+                </div>
+                <h1 className="cardTitle">ts</h1>
+            </div>
+            <div id="card4">
+                <div className={"card4Header cardHeader"}>
                     <img src={css} alt={"css"}/>
                 </div>
                 <h1 className="cardTitle">CSS</h1>
             </div>
-            <div id="card4">
-                <div className={"card4Header cardHeader"}>
+            <div id="card5">
+                <div className={"card5Header cardHeader"}>
                     <img src={html} alt={"html"}/>
                 </div>
                 <h1 className="cardTitle">HTML</h1>
             </div>
         </div>
-)
+    )
 }
 
 export default Cards

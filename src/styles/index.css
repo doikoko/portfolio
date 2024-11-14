@@ -231,49 +231,14 @@ header hr{
   margin-right: 250px;
 }
 
-@media(max-width: 600px){
-  .modalDisplay{
-    width: 100vw;
-    height: 700px;
-    top: 100%;
-    border-radius: 40px;
-    animation-name: modalPhone;
-    animation-duration: 1s;
-  }
-  #modal img{
-    top: calc(100% - 400px);
-    animation-name: modalPhoneImg;
-    animation-duration: 1s;
-  }
-  .follow{
-    margin-right: 200px;
-  }
-  .close{
-    margin-left: 200px;
-  }
-  .close3{
-    margin-right: 200px;
-  }
-  @keyframes modalPhoneImg{
-    from{
-      top: 100%;
-    }
-  }
-  @keyframes modalPhone {
-    from {
-      top: calc(100% + 700px);
-    }
-  }
-}
-
 /*cards*/
 
 #cards{
   display: grid;
   width: 800px;
-  height: 500px;
+  height: 800px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 20px;
   align-items: center;
   justify-items: center;
@@ -301,9 +266,12 @@ header hr{
   background-color: #ffc039;
 }
 #card3{
-  background-color: #5092ff;
+  background-color: #1d6cfa;
 }
 #card4{
+  background-color: #5092ff;
+}
+#card5{
   background-color: #cf6d20;
 }
 .cardHeader{
@@ -321,9 +289,12 @@ header hr{
   background-color: #877300;
 }
 .card3Header{
-  background-color: #002b87;
+  background-color: #0037af;
 }
 .card4Header{
+  background-color: #002b87;
+}
+.card5Header{
   background-color: #873d00;
 }
 .cardTitle{
@@ -343,7 +314,7 @@ header hr{
 /*about*/
 
 #about {
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -444,10 +415,13 @@ aside > figure{
   }
   #cards{
     width: 500px;
-    height: 500px;
+    height: 800px;
   }
   #contacts{
     height: 25vh;
+  }
+  header{
+    overflow-y: hidden;
   }
   header div h2{
     font-size: 70px;
@@ -463,7 +437,6 @@ aside > figure{
     width: 80px;
     height: 80px;
   }
-
   .modalDisplay {
     width: 500px;
     height: 300px;
@@ -497,16 +470,47 @@ aside > figure{
     width: 70px;
     height: 70px;
   }
+  .modalDisplay{
+    display: block;
+    height: 700px;
+    width: 100vw;
+    top: 100%;
+    border-radius: 40px;
+    animation-name: modalPhone;
+    animation-duration: 1s;
+  }
+  #modal img{
+    top: calc(100% - 400px);
+    animation-name: modalPhoneImg;
+    animation-duration: 1s;
+  }
+  .follow{
+    margin-right: 200px;
+  }
+  .close{
+    margin-left: 200px;
+  }
+  .close3{
+    margin-right: 200px;
+  }
+  @keyframes modalPhoneImg{
+    from{
+      top: 100%;
+    }
+  }
+  @keyframes modalPhone {
+    from {
+      top: calc(100% + 700px);
+    }
+  }
 }
-
 @media (max-width: 550px) {
   #cards > *{
-    height: 250px;
     width: 150px;
   }
   #cards{
     width: 400px;
-    height: 60vh;
+    height: 800px;
   }
   .textTitle{
     font-size: 40px;
